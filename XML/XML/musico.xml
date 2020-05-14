@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../XSL/musico.xsl"?>
+<!DOCTYPE musico SYSTEM "../DTD_y_XSD/musico.dtd">
+<musico>
+    <artista>
+        <mensaje>Ahora puedes unirte a la familia de
+        Earify para compartir tus propias canciones y producciones</mensaje>
+        <nombre>¡Tu nombre artístico!</nombre>    
+        <album>
+            <nomalbu>¡Aquí iría el nombre de tu álbum!</nomalbu>
+            <cancion>¡Cada canción del álbum!</cancion>
+            <cancion>¡Cada canción del álbum!</cancion>
+            <cancion>¡Cada canción del álbum!</cancion>
+            <cancion>¡Cada canción del álbum!</cancion>
+            <cancion>...</cancion>
+            <discografica>¡La productora con la que has producido el álbum!</discografica>        
+        </album> 
+    </artista>
+</musico>
+
+

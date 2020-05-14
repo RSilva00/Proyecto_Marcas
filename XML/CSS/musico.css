@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+  background-image: url(../../Imgs/Body/fondo.jpg);
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Lucida Bright", monospace;
+}
+ h4, h3 {
+     border-bottom: 2px dashed white;
+ }

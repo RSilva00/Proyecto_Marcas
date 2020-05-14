@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Earify: entrar</title>
+    <link rel="stylesheet" href="../../CSS/entrar.css">
+    <link rel="stylesheet" href="../../CSS/index.css">
+
+  </head>
+  <body>
+    <a href="../Index/index.html"><h2>EAR<span id="color">IFY</span></h2></a>
+    <header>
+      <nav>
+        <ul>
+          <h2 id="contenido">···
+            <span id="content">
+              <br>
+              <a href="../Index/index.html">Home</a>
+              <br>
+              <a href="../Artistas/artistas.html">Artistas</a>
+              <br>
+              <a href="../Música/musica.html">Música</a>
+              <br>
+              <a href="../Vídeos/videos.html">Vídeos</a>
+              <br>
+              <a href="#Contacto">Contacto</a>
+            </span>
+          </h2>
+
+          <a href="../Index/index.html">
+            <li>Home</li>
+          </a>
+          <a href="../Artistas/artistas.html">
+            <li>Artistas</li>
+          </a>
+          <a href="../Música/musica.html">
+            <li>Música</li>
+          </a>
+          <a href="../Vídeos/videos.html">
+            <li>Vídeos</li>
+          </a>
+          <a href="#Contacto"><li>Contacto</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="" action="index.html" method="post">
+      <fieldset>
+      <legend>Inicia sesión</legend>
+      <span id="medio">
+        <label for="usuario">Usuario</label>
+        <br>
+        <input type="text" name="" value="" id="usuario">
+        <label for="contraseña">Contraseña</label>
+        <br>
+        <input type="password" name="" value="" id="contraseña">
+        <br>
+        <br>
+
+        <button type="button" name="button" onclick="acceso()">Entrar</button>
+        </span>
+      </fieldset>
+    </form>
+    <br>
+    <br>
+
+
+
+    <hr>
+    <br>
+
+    <footer id="Contacto">
+      <h4>Contacto</h4>
+      <br>
+      <br>
+      <a href="https://www.facebook.com"><img src="../../Imgs/Iconos/facebook.png" alt=""> </a>
+      <a href="https://www.twitter.com/explore"><img src="../../Imgs/Iconos/twitter.png" alt=""> </a>
+      <a href="https://www.instagram.com"><img src="../../Imgs/Iconos/instagram.png" alt=""> </a>
+      <a href="https://www.youtube.com"><img src="../../Imgs/Iconos/youtube.png" alt=""> </a>
+      <br>
+      <br>
+      <h5>© Página propiedad de Earify Inc. Todos los derechos reservados.</h5>
+    </footer>
+
+    <script type="text/javascript">
+
+
+      function acceso() {
+        var usuario = document.getElementById('usuario').value;
+        var contraseña = document.getElementById('contraseña').value;
+
+        var usuarios = ["Sonia", "Pepe", "Mateo"];
+        var contraseñas = ["daw1", "daw2", "daw3"];
+
+
+        for (var i=0; i<3; i++) {
+          if (usuarios[i]==usuario && contraseñas[i]==contraseña) {
+            alert("Acceso concedido");
+            i=3;
+          }
+
+        }
+
+      }
+
+    </script>
+
+
+  </body>
+</html>

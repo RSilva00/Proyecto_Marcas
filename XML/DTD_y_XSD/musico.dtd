@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT musico (artista+)>
+<!ELEMENT artista (mensaje?, nombre, album+)>
+<!ELEMENT mensaje (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT album (nomalbu, cancion+, discografica?)>
+<!ELEMENT nomalbu (#PCDATA)>
+<!ELEMENT cancion (#PCDATA)>
+<!ELEMENT discografica (#PCDATA)>
