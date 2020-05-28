@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e:empleo xmlns:e="http://www.earify.es/empleo"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation= "http://www.earify.es/empleo ../DTD_y_XSD/empleo.xsd">
+    <e:puesto e:vacantes="1">
+        <e:tipo>Productor</e:tipo>
+    </e:puesto>
+    <e:puesto e:vacantes="4">
+        <e:tipo>Diseñador web</e:tipo>
+    </e:puesto>
+    <e:puesto e:vacantes="2">
+        <e:tipo>Programador JS/Angular/TS</e:tipo>
+    </e:puesto>
+</e:empleo>
