@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Earify: entrar</title>
+    <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../Imgs/Iconos/logo.png">
+  </head>
+  <body>
+    <a href="../Index/index.html"><h2>EAR<span id="color">IFY</span></h2></a>
+    <header>
+      <nav>
+        <ul>
+          <h2 id="contenido">···
+            <span id="content">
+              <br>
+              <a href="../Index/index.html">Home</a>
+              <br>
+              <a href="../Artistas/artistas.html">Artistas</a>
+              <br>
+              <a href="../Música/musica.html">Música</a>
+              <br>
+              <a href="../Vídeos/videos.html">Vídeos</a>
+              <br>
+              <a href="../Acceso/entrar.html"><span class="rig">Ent<span class="mitadcolor">rar</span></span></a>
+              <br>
+              <a href="../Crear/crear.html">Crear</a>
+              <br>
+              <a href="../Contacto/contacto.html">Contacto</a>
+              <br>
+              <a href="../Empleo/empleo.html">Empleo</a>
+            </span>
+          </h2>
+
+          <a href="../Index/index.html">
+            <li>Home</li>
+          </a>
+          <a href="../Artistas/artistas.html">
+            <li>Artistas</li>
+          </a>
+          <a href="../Música/musica.html">
+            <li>Música</li>
+          </a>
+          <a href="../Vídeos/videos.html">
+            <li>Vídeos</li>
+          </a>
+          <a href="../Crear/crear.html"><li>Crear</li>
+          </a>
+          <a href="../Contacto/contacto.html"><li>Contacto</li>
+          </a>
+          <a href="../Empleo/empleo.html"><li>Empleo</li>
+          </a>
+          <a href="../Acceso/entrar.html">
+            <li class="rig">Ent<span class="mitadcolor">rar</span></li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <br>
+    <br>
+    <footer>
+      <form>
+        <fieldset>
+        <legend>Formulario de contacto</legend>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="" value="" placeholder="Tu email :)" id="email" required>
+        <br>
+        <label for="Motivo">Motivo</label>
+          <select class="" name="Opciones">
+            <option value="sugerencia">Sugerencia</option>
+            <option value="info">Información</option>
+            <option value="problema">Problema</option>
+          </select>
+        <br>
+        <label for="Texto">Texto</label>
+        <br>
+        <textarea rows="8" cols="60" placeholder="Escribe aquí lo que nos quieras transmitir" id="texto" required></textarea>
+        <br>
+        <h5>Política de privacidad y uso de datos</h5>
+        <input type="checkbox" name="" value="">Acepto
+        <input type="checkbox" name="" value="">No acepto
+        <br>
+        <br>
+        <button type="button" name="button" onclick="info();infoEscrita()">Enviar</button>
+        </fieldset>
+      </form>
+      <div id="infoIntroducida" style="color: white; background-color: grey;">
+
+      </div>
+      <br>
+      <br>
+
+      <h3><span id="preferencia">Si lo prefieres, puedes visitarnos en la siguiente dirección:</span></h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6498061038274!2d-87.63810358666582!3d41.8788803733481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbee269fbbb%3A0x10f6dce5eb88c7d!2sTorre%20Willis!5e0!3m2!1ses!2ses!4v1589477667194!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <hr>
+    <br>
+
+    <footer id="Contacto">
+      <h4>Contacto</h4>
+      <br>
+      <br>
+      <a href="https://www.facebook.com"><img src="../../Imgs/Iconos/facebook.png" alt=""> </a>
+      <a href="https://www.twitter.com/explore"><img src="../../Imgs/Iconos/twitter.png" alt=""> </a>
+      <a href="https://www.instagram.com"><img src="../../Imgs/Iconos/instagram.png" alt=""> </a>
+      <a href="https://www.youtube.com"><img src="../../Imgs/Iconos/youtube.png" alt=""> </a>
+      <br>
+      <br>
+      <h5>© Página propiedad de Earify Inc. Todos los derechos reservados.</h5>
+    </footer>
+
+
+
+        <script type="text/javascript">
+
+          function info() {
+            var texto=document.getElementById('texto').value;
+
+            var email=document.getElementById('email').value;
+            console.log(texto);
+            console.log(email);
+            if (texto!="") {
+              alert("Gracias");
+            } else {
+              alert("Ooops, creo que no has escrito nada.");
+            }
+          }
+
+          function infoEscrita() {
+            var texto=document.getElementById('texto').value;
+
+            var email=document.getElementById('email').value;
+
+            document.getElementById('infoIntroducida').innerHTML="Nos has escrito el siguiente mensaje: "+
+            texto+" con el email: "+email+". ¡Gracias por tus comentarios!";
+          }
+
+
+
+
+
+        </script>
+
+        <style media="screen">
+          button {
+            background-color: lightgreen;
+            color: white;
+            border-color: green;
+            border-radius: 20px;
+          }
+          #preferencia {
+            color: white;
+            font-size: 25px;
+            background-color: black;
+          }
+        </style>
+
+  </body>
+</html>

@@ -26,7 +26,9 @@
               <br>
               <a href="../Crear/crear.html">Crear</a>
               <br>
-              <a href="#Contacto">Contacto</a>
+              <a href="../Contacto/contacto.html">Contacto</a>
+              <br>
+              <a href="../Empleo/empleo.html">Empleo</a>
             </span>
           </h2>
 
@@ -44,7 +46,9 @@
           </a>
           <a href="../Crear/crear.html"><li>Crear</li>
           </a>
-          <a href="#Contacto"><li>Contacto</li>
+          <a href="../Contacto/contacto.html"><li>Contacto</li>
+          </a>
+          <a href="../Empleo/empleo.html"><li>Empleo</li>
           </a>
           <a href="../Acceso/entrar.html">
             <li class="rig">Ent<span class="mitadcolor">rar</span></li>
@@ -74,8 +78,7 @@
           ¡¡Agradecemos tus sugerencias!!
           </p>
         </div>
-        <div class="novedades">
-          <aside>
+          <aside class="novedades">
           <h2 id="news">Echa un vistazo aquí para ver y escuchar las últimas novedades</h2>
           <table>
             <tr>
@@ -90,7 +93,7 @@
             </tr>
           </table>
             </aside>
-            </div>
+
         </div>
 
       </div>
@@ -101,34 +104,6 @@
     <br>
 
     <footer id="Contacto">
-      <form>
-        <fieldset>
-        <legend>Formulario de contacto</legend>
-        <label for="email">Email</label>
-        <br>
-        <input type="email" name="" value="" placeholder="Tu email :)" id="email">
-        <br>
-        <label for="Motivo">Motivo</label>
-          <select class="" name="Opciones">
-            <option value="sugerencia">Sugerencia</option>
-            <option value="info">Información</option>
-            <option value="problema">Problema</option>
-          </select>
-        <br>
-        <label for="Texto">Texto</label>
-        <br>
-        <textarea rows="8" cols="60" placeholder="Escribe aquí lo que nos quieras transmitir" id="texto"></textarea>
-        <br>
-        <h5>Política de privacidad y uso de datos</h5>
-        <input type="checkbox" name="" value="">Acepto
-        <input type="checkbox" name="" value="">No acepto
-        <br>
-        <button type="button" name="button" onclick="info();">Enviar</button>
-        </fieldset>
-      </form>
-
-      <h4>Puedes visitarnos en la siguiente dirección:</h4>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6498061038274!2d-87.63810358666582!3d41.8788803733481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbee269fbbb%3A0x10f6dce5eb88c7d!2sTorre%20Willis!5e0!3m2!1ses!2ses!4v1589477667194!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
       <h4>Contacto</h4>
       <a href="https://www.facebook.com"><img src="../../Imgs/Iconos/facebook.png" alt=""> </a>
@@ -140,27 +115,6 @@
       <h5>© Página propiedad de Earify Inc. Todos los derechos reservados.</h5>
     </footer>
 
-
-    <script type="text/javascript">
-
-      function info() {
-        var texto=document.getElementById('texto').value;
-
-        var email=document.getElementById('email').value;
-        console.log(texto);
-        console.log(email);
-        if (texto!="") {
-          alert("Gracias");
-        } else {
-          alert("Ooops, creo que no has escrito nada.");
-        }
-      }
-
-
-
-
-
-    </script>
 
 
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.earify.es/empleo" elementFormDefault="qualified" attributeFormDefault="qualified"> 
+    <xs:element name="empleo">
+        <xs:complexType>
+           <xs:sequence>
+                <xs:element name="puesto" maxOccurs="10">                    
+                   <xs:complexType>                       
+                       <xs:sequence>
+                               <xs:element name="tipo" type="xs:string" minOccurs="0" maxOccurs="10"/>
+                        </xs:sequence>
+                       <xs:attribute name="vacantes" type="xs:positiveInteger"/>
+                     </xs:complexType>
+                </xs:element> 
+            </xs:sequence>
+            </xs:complexType>                   
+    </xs:element>
+</xs:schema>
